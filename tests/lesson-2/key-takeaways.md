@@ -34,7 +34,7 @@ init -> add -> commit -> push
 init -> config -> add -> commit -> push
 
 
-## JavaScript
+## JavaScript basic
 - Là 1 ngôn ngữ lập trình (from 1995 by Brendan Eich)
 - Giúp browser hoạt động
 - Top 1 language: 
