@@ -240,6 +240,52 @@ getTicketPrice(4)
 
 // 10. Viết hàm in ra tên tháng dựa vào số tháng được nhập vào.
 // Sử dụng câu lệnh switch...case để xử lý.
+function printMonthName(monthNumber) {
+    switch (monthNumber) {
+        case 1:
+            console.log("Tháng Một");
+            break;
+        case 2:
+            console.log("Tháng Hai");
+            break;
+        case 3:
+            console.log("Tháng Ba");
+            break;
+        case 4:
+            console.log("Tháng Tư");
+            break;
+        case 5:
+            console.log("Tháng Năm");
+            break;
+        case 6:
+            console.log("Tháng Sáu");
+            break;
+        case 7:
+            console.log("Tháng Bảy");
+            break;
+        case 8:
+            console.log("Tháng Tám");
+            break;
+        case 9:
+            console.log("Tháng Chín");
+            break;
+        case 10:
+            console.log("Tháng Mười");
+            break;
+        case 11:
+            console.log("Tháng Mười Một");
+            break;
+        case 12:
+            console.log("Tháng Mười Hai");
+            break;
+        default:
+            console.log("Số tháng không hợp lệ. Vui lòng nhập từ 1 đến 12.");
+    }
+}
+
+printMonthName(4);  // Output: Tháng Tư
+printMonthName(12); // Output: Tháng Mười Hai
+printMonthName(15); // Output: Số tháng không hợp lệ...
 
 // 11. Viết hàm nhập vào điểm số. In ra phân loại điểm số của học sinh: giỏi (>= 8), khá (>= 6.5 và < 8),
 // trung bình (>= 5 và < 6.5), yếu (< 5).
