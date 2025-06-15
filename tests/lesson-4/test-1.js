@@ -5,22 +5,23 @@ let mission = "Khám phá Vũ trụ K11";
 crew = ["Thư", "Dương", "Loan Anh", "Ngân", "Thư 2", "Dương 2", "Loan Anh 2", "Ngân 2"];
 
 function launchShip(crew) {
-    let text1 = "Chuẩn bị khởi động! Phi hành đoàn gồm: ";
-
-    let text3 = `sẽ đồng hành cùng bạn trong chuyến phiêu lưu ${mission}!`;
-    
-    let text2 = "";
+    let listMember = "";
+    const lastIndex = crew.length - 1;
     for (const member of crew) {
-        text2 += `${member}, `
+        if(crew.indexOf(member) === lastIndex) {
+            listMember += `${member}`
+        }
+        else {           
+            listMember += `${member}, `
+        }
     }
-
-    return text1 + text2 + text3;
-
+    return `Chuẩn bị khởi động! Phi hành đoàn gồm: ${listMember} sẽ đồng hành cùng bạn trong chuyến phiêu lưu ${mission}!`
+    
     // console.log("Chuẩn bị khởi động! Phi hành đoàn gồm: ");
     // for (const member of crew) {
     //     console.log(member);
     // }
-    // console.log(`sẽ đồng hành cùng bạn trong chuyến phiêu lưu ${mission}!`); 
+    // console.log(`sẽ đồng hành cùng bạn trong chuyến phiêu lưu ${mission}!`);    
 } 
 
 
@@ -52,8 +53,7 @@ function calculateDistance(speed, time) {
     return distance;
 }
 
-let outputCalDistance = calculateDistance(1000, 24);
-console.log("Distance: ", outputCalDistance)
+console.log(`Distance: ${calculateDistance(1000, 24)}`)
 
 // 3. Hành tinh kỳ lạ
 function convertTimeToHex(time) {
@@ -99,10 +99,10 @@ function decryptCode2(code) {
 
 let inputCode = "K11 Challenge";
 // let outputDecryptCode = decryptCode(inputCode);
-// console.log("DecryptCode: ", outputDecryptCode);
+// console.log("Decrypt Code: ", outputDecryptCode);
 
 let outputDecryptCode2 = decryptCode2(inputCode);
-console.log("DecryptCode2: ", outputDecryptCode2);
+console.log("Decrypt Code: ", outputDecryptCode2);
 
 // 5. Trở về Trái Đất
 
