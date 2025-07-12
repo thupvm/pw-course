@@ -14,7 +14,12 @@ class Library {
     }
 
     findBook(title: string) {
-        return this.books.find(book => book.toLowerCase() === title.toLowerCase());
+        // return this.books.find(book => book.toLowerCase() === title.toLowerCase());
+        if(this.books.some(bookName => bookName.toLowerCase() === title.toLowerCase())) {
+            console.log("Find out book with title: ", title);
+        } else {
+            console.log("Not find out book with title: ", title);
+        }
     }
 }
 
@@ -27,5 +32,7 @@ books.forEach(element => {
 });
 console.log("New lib: ", lib);
 
-let title = "This IS BOOK 3";
-console.log("Find book with title: ", lib.findBook(title));
+let title1 = "This IS BOOK 3";
+let title2 = "book";
+lib.findBook(title1);
+lib.findBook(title2);

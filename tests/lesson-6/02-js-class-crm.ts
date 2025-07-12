@@ -12,7 +12,12 @@ class Customer {
     };
 
     displayInfo() {
-        console.log(`ID: ${this.id} \nName ${this.name} \nEmail: ${this.email} \nPhone: ${this.phone}`)
+        // console.log(`ID: ${this.id} \nName ${this.name} \nEmail: ${this.email} \nPhone: ${this.phone}`)
+        console.log(`========== Customer Info ===============
+            - ID: ${this.id}
+            - Name: ${this.name}
+            - Email: ${this.email}
+            - Phone: ${this.phone}`)
     };
 
     updateEmail(newEmail: string) {
@@ -24,3 +29,4 @@ class Customer {
 const customer = new Customer(123,'Alibaba', 'ali@gmail.com', '0909090909');
 customer.displayInfo();
 customer.updateEmail('newAli@gmail.com');
+customer.displayInfo();

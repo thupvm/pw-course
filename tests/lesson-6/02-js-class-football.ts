@@ -12,15 +12,16 @@ class Team {
     }
 
     listPlayers(){
-        console.log("Player List: ")
-        return this.players.forEach(player => { console.log(player)});
+        console.log(`Team name: ${this.name}`);
+        console.log(`${this.players.join(', ')}`);
+        // return this.players.forEach(player => { console.log(player)});
     }
 }
 
 const team = new Team("HAGL", ["Justin", "Andrea", "Etos"]);
 console.log(team);
 
-let playerList = ["Beckham", "David", "Ronadol", "Messi", "Subasa"];
+let playerList = ["Beckham", "David", "Ronaldo", "Messi", "Subasa"];
 for (const player of playerList) {
     team.addPlayer(player);
 }

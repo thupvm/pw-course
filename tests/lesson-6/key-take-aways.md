@@ -57,7 +57,7 @@ git push orgin main
 #### String Methods: 
 - startsWith()
 - endsWith()
-- includes(): include string, return true/false
+- includes(): include string input, return true/false
 - slice()
 - toUpperCase()
 - toLowerCase()
@@ -67,22 +67,22 @@ git push orgin main
 - replace()
 - repeat()
 #### String utils function
-- trim()
+- trim(): loại bỏ khoảng trắng
 - toLowerCase() và toUpperCase()
 - includes()
-- replace()
-- split()
-- substring()
+- replace(): thay thế ký tự trong string bằng 1 ký tự khác
+- split(): return 1 string array chứa các phần tử của mảng được tách ra bởi ký tự input
+- substring(): cắt chuỗi theo vị trí index (có from hoặc vừa from + to)
 - indexOf()
 
 ### Array util
 #### Array Methods: 
 - toString()
-- join()
+- join(): return 1 string chứa các phần tử của mảng bị phân cách bởi ký tự input
 - concat()
 - splice()
 - slice()
-- indexOf()
+- indexOf(): return vị trí đầu tiên của ký tự input
 - lastIndexOf()
 - flat()
 - forEach()
@@ -96,15 +96,19 @@ git push orgin main
 - sort()
 
 #### Array utils function
-- map
-- filter
-- find
-- reduce
-- some
-- every
-- push
-- shift
-- sort
+- every: nếu tất cả các phần tử trong mảng đều thỏa yêu cầu -> return true
+- filter: return mảng các elements thỏa điều kiện
+- find: return element đầu tiên thỏa điều kiện
+- join: return chuỗi gồm nhiều elements phân cách bởi 1 ký tự input
+- map: return mảng đã được biến đổi theo yêu cầu
+- push: thêm element vào cuối mảng
+- pop: remove element cuối của mảng
+- shift: remove element đầu tiên của mảng
+- unshift: thêm element vào đầu mảng
+- reduce: cộng dồn giá trị của các elements trong mảng. Có thể khai báo giá trị khởi tạo
+- some: return true nếu có 1 phần tử thỏa đk
+- sort: sắp xếp phần tử trong mảng, default tăng dần. Có thể custom để giảm dần
+- reverse: reverse mảng (ko sắp xếp)
 
 ### Class
 - Dùng để khai báo kiểu dữ liệu
@@ -129,3 +133,4 @@ fillLogin(username, password)
 + npm install -D ts-node typescript
 + npx tsc --init
 + Run: npx ts-node <fileName/path>
+or npx tsx <fileName/path>

@@ -1,0 +1,11 @@
+Explain
+a. git clone <url>
+-> get available code to local
+b. git branch <branch_name>
+-> create new branch
+c. git checkout <branch_name>
+-> change to other branch
+d. git checkout -b <branch_name>
+-> create new branch and navigate to new created branch
+e. git pull origin master
+-> get latest code on branch master to local
